@@ -77,5 +77,5 @@ $lang = array_merge($lang, array(
 	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Permet de ne pas afficher le <strong>Nom du site</strong> et la <strong>description du site</strong>.',
 
 	'SITE_SEARCH_REMOVE'			=> 'Retirer la boite de recherche',
-	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Permet de retirer la boite de recherche dans le haut du forum.',
+	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Permet de ne pas afficher la boite de recherche dans le haut du forum.',
 ));

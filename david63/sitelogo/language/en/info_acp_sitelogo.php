@@ -71,6 +71,8 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_WIDTH'				=> 'Logo width',
 	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Leaving this blank will use the logo’s original width.<br />The default logo width is 149px.',
 
+	'SITE_NAME_BELOW'				=> 'Site name and description below the logo',
+	'SITE_NAME_BELOW_EXPLAIN'		=> 'Move the site name and site description below the site logo. This will also move the search box onto the top nav bar. The text will be positioned (left/centre/right) the same as the logo.',
 	'SITE_NAME_SUPRESS'				=> 'Suppress text display',
 	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Setting this option will prevent the <strong>Site Name</strong> and <strong>Site Description</strong> from being displayed.',
 

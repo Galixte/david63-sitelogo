@@ -1,3 +1,5 @@
+<!-- INCLUDECSS @david63_sitelogo/site_logo_responsive.css -->
+
 <!-- IF SITENAME_SUPRESS -->
 	<!-- INCLUDECSS @david63_sitelogo/site_logo_sitename.css -->
 <!-- ENDIF -->
@@ -8,4 +10,9 @@
 
 <!-- IF SITE_LOGO_RIGHT -->
  	<!-- INCLUDECSS @david63_sitelogo/site_logo_right.css -->
+	<!-- IF SEARCH_FIX -->
+		<!-- INCLUDECSS @david63_sitelogo/site_logo_search_below.css -->
+	<!-- ELSE -->
+		<!-- INCLUDECSS @david63_sitelogo/site_logo_search_right.css -->
+	<!-- ENDIF -->
 <!-- ENDIF -->

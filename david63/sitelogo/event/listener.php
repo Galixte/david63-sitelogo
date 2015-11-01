@@ -14,6 +14,8 @@ namespace david63\sitelogo\event;
 */
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
+use david63\sitelogo\ext;
+
 /**
 * Event listener
 */
@@ -84,12 +86,16 @@ class listener implements EventSubscriberInterface
 		}
 
 		$this->template->assign_vars(array(
-			'SITE_DESCRIPTION'	=> ($this->config['site_name_supress']) ? '' : ($this->config['site_desc']),
-			'SITE_LOGO_CENTRE'	=> ($this->config['site_logo_position'] == 1) ? true : false,
-			'SITE_LOGO_IMG'		=> $site_logo_img,
-			'SITE_LOGO_RIGHT'	=> ($this->config['site_logo_position'] == 2) ? true : false,
-			'SITENAME_SUPRESS'	=> ($this->config['site_name_supress']) ? true : false,
-			'S_IN_SEARCH'		=> ($this->config['site_search_remove']) ? true : false,
+			'SEARCH_FIX'			=> (!$this->config['site_search_remove'] && $this->config['site_name_below'] && $this->config['site_logo_position'] == ext::LOGO_POSITION_RIGHT) ? true : false,
+			'SITE_DESCRIPTION'		=> ($this->config['site_name_supress'] || $this->config['site_name_below']) ? '' : ($this->config['site_desc']),
+			'SITE_LOGO_CENTRE'		=> ($this->config['site_logo_position'] == ext::LOGO_POSITION_CENTER) ? true : false,
+			'SITE_LOGO_DESCRITION'	=> $this->config['site_desc'],
+			'SITE_LOGO_IMG'			=> $site_logo_img,
+			'SITE_LOGO_RIGHT'		=> ($this->config['site_logo_position'] == ext::LOGO_POSITION_RIGHT) ? true : false,
+			'SITE_LOGO_SITENAME'	=> $this->config['sitename'],
+			'SITE_NAME_BELOW'		=> $this->config['site_name_below'],
+			'SITENAME_SUPRESS'		=> ($this->config['site_name_supress'] || $this->config['site_name_below']) ? true : false,
+			'S_IN_SEARCH'			=> ($this->config['site_search_remove'] || $this->config['site_name_below']) ? true : false,
 		));
 	}
 }

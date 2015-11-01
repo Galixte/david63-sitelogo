@@ -3,14 +3,14 @@
 	"type": "phpbb-extension",
 	"description": "Replace the standard phpBB logo with own custom logo",
 	"homepage": "",
-	"version": "1.0.0",
-	"time": "2015-05-16",
+	"version": "1.0.1",
+	"time": "2015-11-01",
 	"license": "GPL-2.0",
 	"authors": [{
 			"name": "David Wood",
 			"username": "david63",
-			"email": "david@webworld.xyz",
-			"homepage": "http://webworld.xyz",
+			"email": "",
+			"homepage": "",
 			"role": "Developer"
 		}],
 	"require": {

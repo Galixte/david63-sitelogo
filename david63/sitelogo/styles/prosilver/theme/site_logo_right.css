@@ -9,8 +9,14 @@
 	margin-right: 10px
 }
 
-.search-header {
-	float: left;
-	margin-top: -10px;
-	margin-left: 10px;
+#new_title h1 {
+	clear: both;
+	float: right;
+	margin-right: 10px;
+}
+
+#new_title p {
+	clear: both;
+	float: right;
+	margin-right: 10px;
 }

@@ -11,3 +11,13 @@
 .search-header {
 	margin-top: -40px;
 }
+
+#new_title h1 {
+	text-align: center;
+	width: 100%;
+}
+
+#new_title p {
+	text-align: center;
+	width: 100%;
+}

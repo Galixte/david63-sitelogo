@@ -11,6 +11,8 @@ namespace david63\sitelogo\controller;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+use david63\sitelogo\ext;
+
 /**
 * Admin controller
 */
@@ -92,9 +94,9 @@ class admin_controller implements admin_interface
 		// Positions
 		$positions = array();
 
-		$positions[] = $this->user->lang('LOGO_LEFT');
-		$positions[] = $this->user->lang('LOGO_CENTRE');
-		$positions[] = $this->user->lang('LOGO_RIGHT');
+		$positions[ext::LOGO_POSITION_LEFT] = $this->user->lang('LOGO_LEFT');
+		$positions[ext::LOGO_POSITION_CENTER] = $this->user->lang('LOGO_CENTRE');
+		$positions[ext::LOGO_POSITION_RIGHT] = $this->user->lang('LOGO_RIGHT');
 
 		foreach ($positions as $value => $label)
 		{
@@ -116,6 +118,7 @@ class admin_controller implements admin_interface
 			'SITE_NAME_BELOW'		=> isset($this->config['site_name_below']) ? $this->config['site_name_below'] : '',
 			'SITE_NAME_SUPRESS'		=> isset($this->config['site_name_supress']) ? $this->config['site_name_supress'] : '',
 			'SITE_SEARCH_REMOVE'	=> isset($this->config['site_search_remove']) ? $this->config['site_search_remove'] : '',
+			'SITE_LOGO_VERSION'		=> ext::SITE_LOGO_VERSION,
 
 			'U_ACTION'				=> $this->u_action,
 		));

@@ -9,13 +9,7 @@
 	margin-right: 10px
 }
 
-#new_title h1 {
-	clear: both;
-	float: right;
-	margin-right: 10px;
-}
-
-#new_title p {
+#new-title h1, #new-title p {
 	clear: both;
 	float: right;
 	margin-right: 10px;

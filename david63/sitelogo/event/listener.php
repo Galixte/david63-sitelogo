@@ -86,8 +86,7 @@ class listener implements EventSubscriberInterface
 		}
 
 		$this->template->assign_vars(array(
-			'SEARCH_FIX'			=> (!$this->config['site_search_remove'] && $this->config['site_name_below'] && $this->config['site_logo_position'] == ext::LOGO_POSITION_RIGHT) ? true : false,
-			'SITE_DESCRIPTION'		=> ($this->config['site_name_supress'] || $this->config['site_name_below']) ? '' : ($this->config['site_desc']),
+			'SEARCH_BELOW'			=> (!$this->config['site_search_remove'] && $this->config['site_name_below']) ? true : false,
 			'SITE_LOGO_CENTRE'		=> ($this->config['site_logo_position'] == ext::LOGO_POSITION_CENTER) ? true : false,
 			'SITE_LOGO_DESCRITION'	=> $this->config['site_desc'],
 			'SITE_LOGO_IMG'			=> $site_logo_img,

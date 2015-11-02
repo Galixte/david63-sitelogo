@@ -10,9 +10,11 @@
 
 <!-- IF SITE_LOGO_RIGHT -->
  	<!-- INCLUDECSS @david63_sitelogo/site_logo_right.css -->
-	<!-- IF SEARCH_FIX -->
-		<!-- INCLUDECSS @david63_sitelogo/site_logo_search_below.css -->
-	<!-- ELSE -->
+	<!-- IF not SEARCH_BELOW -->
 		<!-- INCLUDECSS @david63_sitelogo/site_logo_search_right.css -->
 	<!-- ENDIF -->
+<!-- ENDIF -->
+
+<!-- IF SEARCH_BELOW -->
+	<!-- INCLUDECSS @david63_sitelogo/site_logo_search_below.css -->
 <!-- ENDIF -->

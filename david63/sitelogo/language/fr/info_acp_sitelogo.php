@@ -73,6 +73,8 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_WIDTH'				=> 'Largeur du logo',
 	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Laisser vide pour utiliser la largeur par défaut du logo.<br />La largeur par défaut du logo est de 149px.',
 
+	'SITE_NAME_BELOW'				=> 'Nom & description du site en dessous du logo',
+	'SITE_NAME_BELOW_EXPLAIN'		=> 'Permet de déplacer le nom et la description du site en dessous du logo. Cela déplace aussi la boite de recherche sur la barre de navigation supérieure. Le texte est positionné à gauche, au centre ou à droite comme le logo.',
 	'SITE_NAME_SUPRESS'				=> 'Supprimer l’affichage du texte',
 	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Permet de ne pas afficher le <strong>Nom du site</strong> et la <strong>description du site</strong>.',
 
